@@ -28,10 +28,14 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/${USER_NAME}/${POD_NAME}.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '13.0'
+  s.source_files = '${POD_NAME}/Module/**/*.{swift}'
+  s.resources = "${POD_NAME}/Module/**/*.{xcassets,json,storyboard,xib,xcdatamodeld}"
 
-  s.source_files = '${POD_NAME}/Classes/**/*'
-  
+  s.test_spec 'Tests' do |test_spec|
+      test_spec.source_files = '${POD_NAME}/Tests/**/*.{swift}'
+  end
+
   # s.resource_bundles = {
   #   '${POD_NAME}' => ['${POD_NAME}/Assets/*.png']
   # }
