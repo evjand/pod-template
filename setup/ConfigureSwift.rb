@@ -29,7 +29,7 @@ module Pod
       `touch Pod/Module/Source/DIContainer.swift`
 
       `mv ./templates/swift/* ./`
-      `mv ./Tests/* ./Pod/Tests/`
+      `cp ./Example/Tests/* ./Pod/Tests/`
     end
   end
 

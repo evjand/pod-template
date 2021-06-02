@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
+               BlueprintIdentifier = "C6934F472668385C00558FF5"
                BuildableName = "PROJECT_Tests.xctest"
                BlueprintName = "PROJECT_Tests"
                ReferencedContainer = "container:PROJECT.xcodeproj">
@@ -51,6 +51,16 @@
          </BuildableReference>
       </MacroExpansion>
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C6934F472668385C00558FF5"
+               BuildableName = "PROJECT_Tests.xctest"
+               BlueprintName = "PROJECT_Tests"
+               ReferencedContainer = "container:PROJECT.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
