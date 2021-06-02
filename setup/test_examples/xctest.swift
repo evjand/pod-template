@@ -1,5 +1,5 @@
 import XCTest
-@testabimport PROJECT
+@testable import PROJECT
 
 class Tests: XCTestCase {
 
