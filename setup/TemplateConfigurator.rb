@@ -70,8 +70,6 @@ module Pod
     def run
       @message_bank.welcome_message
 
-      platform = self.ask_with_answers("What platform do you want to use?", ["iOS", "macOS"]).to_sym
-
       ConfigureSwift.perform(configurator: self)
 
       replace_variables_in_files
