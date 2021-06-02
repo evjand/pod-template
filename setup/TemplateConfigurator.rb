@@ -100,7 +100,7 @@ module Pod
     end
 
     def clean_template_files
-      ["./**/.gitkeep", "configure", "_CONFIGURE.rb", "README.md", "LICENSE", "templates", "setup", "CODE_OF_CONDUCT.md", ".git", ".gitignore", ".travis.yml"].each do |asset|
+      ["./**/.gitkeep", "configure", "_CONFIGURE.rb", "README.md", "LICENSE", "templates", "setup", "CODE_OF_CONDUCT.md", ".git", ".gitignore", ".travis.yml", "_Pods.xcodeproj"].each do |asset|
         `rm -rf #{asset}`
       end
     end
@@ -155,7 +155,6 @@ module Pod
 
     def rename_template_files
       FileUtils.mv "POD_README.md", "README.md"
-      FileUtils.mv "POD_LICENSE", "LICENSE"
       FileUtils.mv "NAME.podspec", "#{pod_name}.podspec"
     end
 
