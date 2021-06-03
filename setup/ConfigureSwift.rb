@@ -25,9 +25,6 @@ module Pod
 
       # There has to be a single file in the Classes dir
       # or a framework won't be created
-      `touch Pod/Module/Module.swift`
-      `touch Pod/Module/Source/DIContainer.swift`
-
       `mv ./templates/swift/* ./`
       `cp ./Example/Tests/* ./Pod/Tests/`
     end
